@@ -11,7 +11,7 @@ $(document).ready(function(){
             $('#mainDisplay').html('');
 
             //get value from input
-            $.getJSON('http://stonandi.desktop.amazon.com:5000/performCalc/' + $(this).val(),{
+            $.getJSON($SCRIPT_ROOT + '/performCalc/' + $(this).val(),{
 
             })
                 .done(function(data) {
